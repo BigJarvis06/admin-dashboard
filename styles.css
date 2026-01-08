@@ -54,6 +54,10 @@ body {
     margin-bottom: 32px;
 }
 
+.nav-spacer {
+    height: 45px;
+}
+
 .main-content {
     display: grid;
     grid-template-columns: 3fr 1fr;
