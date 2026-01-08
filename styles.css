@@ -60,24 +60,33 @@ body {
 .main-content {
     display: grid;
     grid-template-columns: 3fr 1fr;
+    background-color: #8168bd;
+}
+
+.project-header {
+    margin-top: 48px;
+    margin-left: 22px;
 }
 
 .project-main {
-    height: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    gap: 22px;
-}
-
-.project-wrapper {
-    flex-grow: 1;
+    gap: 28px;
+    margin-top: 16px;
+    margin-left: 22px;
+    margin-right: 22px;
 }
 
 .media {
-    flex-grow: 1;
     display: grid;
     grid-template-rows: 1fr 1fr;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 32px;
+    height: 136px;
 }
 
 /* icons */ 
