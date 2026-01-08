@@ -45,7 +45,6 @@ body {
 
 .nav-wrapper *:not(:first-child) {
     margin-left: 26px;
-    margin-bottom: 16px;
 }
 
 .dashboard > p {
