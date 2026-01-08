@@ -16,8 +16,8 @@ body {
     height: 100vh;
     width: 100vw;
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 3fr;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
 }
 
 .header {
@@ -40,7 +40,8 @@ body {
 }
 
 .main-content {
-    display: flex;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
 }
 
 .project-main {
@@ -52,7 +53,7 @@ body {
 }
 
 .project-wrapper {
-    flex-grow: 3;
+    flex-grow: 1;
 }
 
 .media {
@@ -61,4 +62,12 @@ body {
     grid-template-rows: 1fr 1fr;
 }
 
+/* icons */ 
 
+.dashboard::before {
+    content: "";
+    display: inline-block;
+    background-image: url(./icons/view-dashboard.svg);
+    width: 48px;
+    height: 48px;
+}
