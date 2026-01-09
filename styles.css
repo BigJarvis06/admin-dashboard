@@ -11,6 +11,7 @@
     --grey: #6e6c71;
     --orange: #bd8168;
     --green: #68bd81;
+    --default-font-size: 16px;
 }
 
 * {
@@ -97,7 +98,7 @@ input[type="search"]:focus {
     margin-right: 32px;
 }
 
-.header,  {
+.header {
     color: black;
     font-weight: bold;
     font-size: 130%;
