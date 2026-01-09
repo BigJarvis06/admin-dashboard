@@ -3,6 +3,16 @@
     src: url(./Roboto-VariableFont_wdth\,wght.ttf);
 }
 
+:root {
+    --main-light-color: #8168bd;
+    --main-color: #473968;
+    --main-dark-color: #0d0a13;
+    --off-white: #e6e1f2;
+    --grey: #6e6c71;
+    --orange: #bd8168;
+    --green: #68bd81;
+}
+
 * {
     margin: 0px;
     border: 0px;
@@ -83,11 +93,14 @@ input[type="search"]:focus {
 
 .user-profile {
     align-self: center;
-    color: black;
-    font-weight: bold;
     justify-items: end;
     margin-right: 32px;
-    font-size: 20px;
+}
+
+.header,  {
+    color: black;
+    font-weight: bold;
+    font-size: 130%;
 }
 
 .main-content {
