@@ -59,11 +59,10 @@ body {
 
 .header-top {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .search-bar {
-    flex-grow: 1;
     align-self: center;
     display: grid;
 }
@@ -80,6 +79,15 @@ input[type="search"] {
 
 input[type="search"]:focus {
     outline: none;
+}
+
+.user-profile {
+    align-self: center;
+    color: black;
+    font-weight: bold;
+    justify-items: end;
+    margin-right: 32px;
+    font-size: 20px;
 }
 
 .main-content {
@@ -216,12 +224,26 @@ input[type="search"]:focus {
     background-image: url(./icons/magnify.svg);
     width: 24px;
     height: 24px;
-    position: fixed;
+    position: absolute;
     align-self: center;
     margin-left: 48px;
     margin-right: 16px;
 }
 
+.notif-bell {
+    background-image: url(./icons/bell-ring-outline.svg);
+    background-color: white;
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+    align-self: center;
+}
 
-
-
+.profile-icon::before {
+    content: "";
+    display: inline-block;
+    background-image: url(./icons/profile-default-svgrepo-com.svg);
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 48px;   
+}
