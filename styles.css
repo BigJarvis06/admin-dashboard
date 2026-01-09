@@ -64,16 +64,21 @@ body {
 
 .search-bar {
     flex-grow: 1;
+    align-self: center;
+    display: grid;
+}
+
+input[type="search"] {
     height: 32px;
-    max-width: 512px;
+    width: clamp(100px, 800px, 1000px);
     border-radius: 16px;
     background-color: #e1d7e1;
     padding: 8px;
     padding-left: 16px;
-    align-self: center;
+    margin-left: 56px;
 }
 
-.search-bar:focus {
+input[type="search"]:focus {
     outline: none;
 }
 
@@ -205,7 +210,17 @@ body {
     height: 24px;
 }
 
-
+.search-bar::before {
+    content: "";
+    display: inline-block;
+    background-image: url(./icons/magnify.svg);
+    width: 24px;
+    height: 24px;
+    position: fixed;
+    align-self: center;
+    margin-left: 16px;
+    margin-right: 16px;
+}
 
 
 
