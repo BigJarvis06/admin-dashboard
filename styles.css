@@ -49,7 +49,6 @@ body {
 }
 
 .nav-wrapper {
-    margin-top: -8px;
     display: flex;
     flex-direction: column;
 }
@@ -76,11 +75,12 @@ body {
 .search-bar {
     align-self: center;
     display: grid;
+    width: 30vw;
 }
 
 input[type="search"] {
     height: 32px;
-    width: clamp(100px, 800px, 1000px);
+    width: 100%;
     border-radius: 16px;
     background-color: var(--off-white);
     padding: 8px;
@@ -133,6 +133,7 @@ input[type="search"]:focus {
     margin-top: 16px;
     margin-left: 22px;
     margin-right: 22px;
+    min-height: 65vh;
 }
 
 .media {
@@ -143,8 +144,7 @@ input[type="search"]:focus {
 .card {
     background-color: #ffffff;
     padding: 32px;
-    height: 136px;
-    min-height: fit-content;
+    min-height: 33%;
 }
 
 /* icons */ 
