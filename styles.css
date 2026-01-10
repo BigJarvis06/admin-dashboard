@@ -24,7 +24,6 @@
 }
 
 body {
-    height: 100vh;
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -121,6 +120,11 @@ input[type="search"]:focus {
     margin-left: 36px;
 }
 
+.greeting-wrapper > p {
+    position: relative;
+    left: 32px;
+}
+
 .greeting {
     grid-row: 1 / 2;
     align-self: end;
@@ -174,6 +178,7 @@ input[type="search"]:focus {
     display: grid;
     grid-template-columns: 3fr 1fr;
     background-color: var(--main-light-color);
+    padding-bottom: 5vh;
 }
 
 .project-header {
@@ -192,15 +197,28 @@ input[type="search"]:focus {
     min-height: 65vh;
 }
 
-.media {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-}
-
 .card {
     background-color: #ffffff;
     padding: 32px;
     min-height: 33%;
+    padding-bottom: 64px;
+}
+
+.media {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin-right: 22px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.media > div > div {
+    margin-top: 16px;
+    background-color: #ffffff;
+}
+
+.announcement-card > p, .trending-card > p {
+    margin-top: 48px;
 }
 
 /* icons */ 
@@ -337,5 +355,9 @@ input[type="search"]:focus {
 .greeting-wrapper::before {
     position: relative;
     grid-row: 1 / 3;
-    margin: 16px;
+    top: 16px;
+    max-width: 96px;
+    max-height: 96px;
+    min-width: 48px;
+    min-height: 48px;
 }
