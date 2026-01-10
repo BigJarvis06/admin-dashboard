@@ -44,7 +44,7 @@ body {
 
 .nav-wrapper li, .nav-wrapper li a {
     color: #ffffff;
-    font-size: calc(var(--default-font-size) * 1.3);
+    font-size: calc(var(--default-font-size) * 1.5);
     font-weight: bold;
 }
 
@@ -59,7 +59,7 @@ body {
 
 .dashboard > p {
     font-weight: bold;
-    font-size: 32px;
+    font-size: calc(var(--default-font-size) * 2);
     margin-bottom: 32px;
 }
 
@@ -93,7 +93,7 @@ input[type="search"]:focus {
 }
 
 .user-profile {
-    margin-top: 24px;
+    margin-top: 18px;
     justify-items: end;
     margin-right: 48px;
 }
@@ -106,12 +106,68 @@ input[type="search"]:focus {
 .header, .user-profile, .announcement-card > p, .trending-card > p, .project-header {
     color: var(--main-dark-color);
     font-weight: bold;
-    font-size: calc(var(--default-font-size) * 1.3);
+    font-size: calc(var(--default-font-size) * 1.5);
 }
 
-.content, .announcement-info {
+.header-bottom {
+    display: flex;
+}
+
+.greeting-wrapper {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    grid-template-rows: 1fr 1fr;
+    margin-left: 36px;
+}
+
+.greeting {
+    grid-row: 1 / 2;
+    align-self: end;
+    font-size: calc(var(--default-font-size) * 1.2);
+}
+
+.user-profile-tag {
+    grid-row: 2 / 3;
+    font-size: calc(var(--default-font-size) * 1.75);
+}
+
+.share-buttons {
+    flex-grow: 1;
+    align-self: center;
+    display: flex;
+    justify-content: end;
+    gap: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.share-buttons > button {
+    color: #ffffff;
+    background-color: var(--main-color);
+    font-size: calc(var(--default-font-size) * 1.3);
+    font-weight: bold;
+    padding: 16px 32px;
+    border-radius: 32px;
+    flex-grow: 1;
+}
+
+.announcement-header {
+    font-weight: bold;
+}
+
+.tag, .announcement-header {
+    color: var(--main-dark-color);
+    font-size: calc(var(--default-font-size) * 1.2);
+}
+
+.content {
     color: var(--grey);
     font-size: calc(var(--default-font-size) * 1.2);
+}
+
+.announcement-info {
+    color: var(--grey);
 }
 
 .main-content {
@@ -261,6 +317,7 @@ input[type="search"]:focus {
     width: 32px;
     height: 32px;
     align-self: center;
+    margin-left: auto;
 }
 
 .profile-icon::before {
@@ -268,7 +325,17 @@ input[type="search"]:focus {
     display: inline-block;
     background-image: url(./icons/profile-default-svgrepo-com.svg);
     background-repeat: no-repeat;
+}
+
+.user-profile::before {
     width: 48px;
     height: 48px;  
     position: relative;
+    margin-left: 48px;
+}
+
+.greeting-wrapper::before {
+    position: relative;
+    grid-row: 1 / 3;
+    margin: 16px;
 }
