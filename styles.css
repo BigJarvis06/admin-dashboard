@@ -156,6 +156,10 @@ input[type="search"]:focus {
     flex-grow: 1;
 }
 
+.media-buttons > button:hover {
+    background-color: #392e53;
+}
+
 .announcement-header {
     font-weight: bold;
 }
@@ -202,6 +206,7 @@ input[type="search"]:focus {
     padding: 32px;
     min-height: 33%;
     padding-bottom: 64px;
+    border-radius: 8px;
 }
 
 .media {
@@ -212,9 +217,12 @@ input[type="search"]:focus {
     grid-row: 1 / 2;
 }
 
+/* announcement and trending cards */
+
 .media > div > div {
     margin-top: 16px;
     background-color: #ffffff;
+    border-radius: 8px;
 }
 
 .announcement-card > p, .trending-card > p {
