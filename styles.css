@@ -232,7 +232,7 @@ input[type="search"]:focus {
 .media {
     display: grid;
     grid-template-rows: 1fr 1fr;
-    margin-right: 22px;
+    margin-right: 48px;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
 }
@@ -243,10 +243,24 @@ input[type="search"]:focus {
     margin-top: 16px;
     background-color: #ffffff;
     border-radius: 8px;
+    padding: 32px;
 }
 
 .announcement-card > p, .trending-card > p {
     margin-top: 48px;
+}
+
+.announcement-card > div > div:not(:last-child) {
+    border-bottom: 1px solid var(--grey);
+    padding-bottom: 16px;
+}
+
+.announcement-card > div > div:not(:first-child) {
+    padding-top: 16px;
+}
+
+.announcement-header {
+    padding-bottom: 4px;
 }
 
 /* icons */ 
