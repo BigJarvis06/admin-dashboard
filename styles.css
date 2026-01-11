@@ -205,8 +205,28 @@ input[type="search"]:focus {
     background-color: #ffffff;
     padding: 32px;
     min-height: 33%;
-    padding-bottom: 64px;
     border-radius: 8px;
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+    border-left: 8px solid var(--orange);
+}
+
+.card .header {
+    display: unset;
+    grid-column: 1 / 3;
+    align-content: center;
+}
+
+.card .content {
+    grid-column: 1 / 3;
+}
+
+.card-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+    grid-column: 2 / 3;
+    align-self: flex-end;
 }
 
 .media {
